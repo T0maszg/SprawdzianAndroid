@@ -1,19 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#F1520606"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:background="#F18732C7"
+                    />
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="#F1BF7530"
+                    >
+                </View>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F18732C7"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F183CCC9"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Grupa">
+
+            </CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="1">
+
+            </CheckBox>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Imię Nazwisko"
+                android:textSize="25dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:hint="Klasa"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#66C73D"
+        android:layout_gravity="center">
+        <View
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="#000000"/>
+        <View
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            android:background="#000000"/>
+        <View
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="190dp"
+            android:background="#000000"/>
+        <View
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="270dp"
+            android:background="#000000"/>
+        <View
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="350dp"
+            android:background="#000000"/>
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="#8BC34A">
+
+            </View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:background="#D0CD8C">
+
+            </View>
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="330dp"
+            android:layout_height="350dp"
+            android:layout_alignParentBottom="true"
+            android:background="#1EB5BD">
+            <FrameLayout
+                android:layout_width="260dp"
+                android:layout_height="150dp"
+                android:background="#E48DE9">
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="80dp"
+                    android:background="#DB0E2D">
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
